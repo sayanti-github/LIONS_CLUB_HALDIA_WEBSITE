@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>About Us</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- SELECT MENU -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- SIDE MENU -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+    <style>
+        body{
+         background-color: aqua;
+        }
+        .enqu-box{
+        width: 800px;
+        background: #fff;
+        border-radius: 2px;
+        position: relative;
+        margin-top: 55px;
+        padding: 92px 70px 88px;
+        box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+        -moz-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+        -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+        -o-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+        -ms-box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+        /* margin: auto; */
+        margin-right: auto;
+        margin-left: auto;
+       }
+       .contact100-form-symbol {
+        display: -webkit-box;
+        display: -webkit-flex;
+          display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #e7e7e7;
+        border-radius: 50%;
+        background: #fff;
+        top: -55px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+        <div class="container">
+         <div class="enqu-box" style="    max-width: 100%;">
+             <span class="contact100-form-symbol">
+                 <img src="images/lions_club_logo.png" alt="SYMBOL-MAIL">
+             </span>
+             <div class="kf_edu2_heading2">
+                 <h3>Enquiry Now</h3>
+                 
+             </div>
+             <form  method="POST" action="./contactmail.php" class="contact-form" onsubmit="return formSubmitConfirmation()">
+                <div class="row">
+              <div class="col-md-6" style="padding: 0;">
+                  <input type="text" name="name" id="name" class="form-control" onchange="getVals(this, 'name_field');" style="background: white;
+                  color: #040404;
+                  border: 1px solid #9f9f9f;
+                  margin-bottom: 15px;height: 54px;" placeholder="Name" required>
+          
+                  <input type="text" name="phone" id="phone" class="form-control" style="background: white;
+                  color: #000000;
+                  border: 1px solid #9f9f9f;
+                  margin-bottom: 15px;height: 54px;" placeholder="Phone" required>
+                    <input type="email" name="email" id="email" class="form-control" onchange="getVals(this, 'email_field');" style="background: white;
+                    color: #000000;
+                    border: 1px solid #9f9f9f;
+                    margin-bottom: 15px;height: 54px;" placeholder="Email Address" required>  
+                 </div>
+                  <div class="col-md-6" style="padding: 0;padding-left:10px;">
+                    <label>Message</label>
+                      <textarea rows="9" name="message" id="message" class="form-control" placeholder="Message" style="background: white;
+                      color: #000000;
+                      border: 1px solid #9f9f9f;
+                      margin-bottom: 15px;" placeholder="Email Address" required>
+                      </textarea>
+                   </div>
+                   <input type="submit" class="pc-button elementor-button button-link cu_btn" value="Enquire Now"></input>        
+                    </div>
+            </form>
+         </div>
+        </div>
+     </div>
+     <!--KF KODE WRAPPER WRAP END-->
+    </div>    
+
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<!--v ticker-->
+	<script src="js/jquery.vticker.min.js"></script>
+	<!--select menu-->
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Side Menu-->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+    
+</body>
+</html>
