@@ -3609,30 +3609,33 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	text-transform: capitalize;
 }
 .kode_navigation .col-md-7 h1 {
-    text-align: center;
+	text-align: center;
     color: #00539b;
     font-size: 36px;
     margin-top: 15px;
-	/* font-family: 'Balsamiq Sans', cursive; */
-    /* text-shadow: 2px 2px #070707; */
-	font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    text-shadow: 2px 1px 2px #07070747;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
 }
 .kode_navigation .col-md-7 p {
     text-align: center;
-    font-size: 16px;
+    font-size: 13px;
     color: #06379f;
-    font-weight: 900;
-    padding-top: 0;
+    font-weight: 700;
+    padding-top: 7px;
     margin-bottom: 0;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.7px;
     /* font-family: 'Bubblegum Sans', cursive; */
-	/* font-family: 'Balsamiq Sans', cursive; */
-	font-family: Arial, Helvetica, sans-serif;
-    line-height: 1;
-	display: none;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    line-height: 1.2;
+    margin-bottom: 9px;
 }
-.kode_navigation .col-md-7 h2 {
+/* .kode_navigation .col-md-7 h2 {
     color: #06379f;
     font-weight: 900;
     font-size: 26px;
@@ -3642,7 +3645,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
     line-height: 1.2;
     margin-bottom: 9px;
-}
+} */
 /*
 	  ==============================================================
 		  EVENT LIST PAGE CSS END
@@ -6212,6 +6215,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 */
 label {
   cursor: pointer;
+  text-align: left;
 }
 label span{
 	float: left;

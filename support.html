@@ -97,29 +97,34 @@
              <form  method="POST" action="./contactmail.php" class="contact-form" onsubmit="return formSubmitConfirmation()">
                 <div class="row">
               <div class="col-md-6" style="padding: 0;">
+                <label>Name</label>
                   <input type="text" name="name" id="name" class="form-control" onchange="getVals(this, 'name_field');" style="background: white;
                   color: #040404;
                   border: 1px solid #9f9f9f;
-                  margin-bottom: 15px;height: 54px;" placeholder="Name" required>
-          
-                  <input type="text" name="phone" id="phone" class="form-control" style="background: white;
-                  color: #000000;
+                  margin-bottom: 1px;
+                  height: 37px;" placeholder="" required>
+                  <label>Phone</label>
+                  <input type="text" name="phone" id="phone" class="form-control" style="    background: white;
+                  color: #040404;
                   border: 1px solid #9f9f9f;
-                  margin-bottom: 15px;height: 54px;" placeholder="Phone" required>
-                    <input type="email" name="email" id="email" class="form-control" onchange="getVals(this, 'email_field');" style="background: white;
-                    color: #000000;
-                    border: 1px solid #9f9f9f;
-                    margin-bottom: 15px;height: 54px;" placeholder="Email Address" required>  
+                  margin-bottom: 1px;
+                  height: 37px;" placeholder="" required>
+                   <label>Email Address</label>
+                  <input type="email" name="email" id="email" class="form-control" onchange="getVals(this, 'email_field');" style="    background: white;
+                  color: #040404;
+                  border: 1px solid #9f9f9f;
+                  margin-bottom: 1px;
+                  height: 37px;" placeholder="" required>  
                  </div>
-                  <div class="col-md-6" style="padding: 0;padding-left:10px;">
+                  <div class="col-md-6">
                     <label>Message</label>
-                      <textarea rows="9" name="message" id="message" class="form-control" placeholder="Message" style="background: white;
-                      color: #000000;
+                      <textarea rows="8.5" name="message" id="message" class="form-control" placeholder="Message" style="background: white;
+                      color: #040404;
                       border: 1px solid #9f9f9f;
-                      margin-bottom: 15px;" placeholder="Email Address" required>
+                      margin-bottom: 1px;" placeholder="Email Address" required>
                       </textarea>
                    </div>
-                   <input type="submit" class="pc-button elementor-button button-link cu_btn" value="Enquire Now"></input>        
+                   <div class="col-md-12" style="    margin-top: 23px;"><input type="submit" class="btn-4" value="Enquire Now"></input></div>        
                     </div>
             </form>
          </div>

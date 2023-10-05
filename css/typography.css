@@ -166,7 +166,7 @@ label {
     color: #3d3d3d;
     display: block;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 button {
@@ -184,6 +184,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     line-height: 20px;
     outline: none;
     vertical-align: middle;
+    background-color: transparent;
 }
 
 form p {
