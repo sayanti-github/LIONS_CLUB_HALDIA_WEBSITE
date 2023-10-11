@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>About Us</title>
-
+	<link href="images/logo_32X26.png" rel="icon">
+	<title>Lions Club Haldia</title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
 	<!-- Full Calender CSS -->
 	<link href="css/fullcalendar.css" rel="stylesheet">
 	<!-- Owl Carousel CSS -->
@@ -42,7 +42,7 @@
         }
         .enqu-box{
         width: 800px;
-        background: #fff;
+        background: #010a3691;;
         border-radius: 2px;
         position: relative;
         margin-top: 55px;
@@ -56,6 +56,30 @@
         margin-right: auto;
         margin-left: auto;
        }
+       .enqu-box .kf_edu2_heading2 h3 {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 15px;
+        font-size: 30px;
+        color: white;
+        }
+        .kf_edu2_heading2 h3:before {
+        background-color: #ffffff;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 49px;
+        width: 25px;
+      }
+      label {
+      color: #ffffff;
+      display: block;
+      font-weight: 400;
+      margin-bottom: 4px;
+     }
        .contact100-form-symbol {
         display: -webkit-box;
         display: -webkit-flex;
@@ -78,6 +102,18 @@
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
 }
+body {
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 52%), rgb(0 0 0 / 73%)), url(./images/Banner01_1920x779px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-4 {
+    background: #fdd001;
+    padding: 6px 18px;
+    border-radius: 7px;
+    color: #00539b;
+    font-weight: 700;
+}
     </style>
 </head>
 
@@ -90,27 +126,27 @@
              <span class="contact100-form-symbol">
                  <img src="images/lions_club_logo.png" alt="SYMBOL-MAIL">
              </span>
-             <div class="kf_edu2_heading2">
+             <div class="kf_edu2_heading2 wow fadeInUp">
                  <h3>Enquiry Now</h3>
                  
              </div>
-             <form  method="POST" action="./contactmail.php" class="contact-form" onsubmit="return formSubmitConfirmation()">
+             <form  method="POST" action="./contactmail.php" class="contact-form" onsubmit="return formSubmitConfirmation()" class="wow fadeInUp">
                 <div class="row">
               <div class="col-md-6" style="padding: 0;">
                 <label>Name</label>
-                  <input type="text" name="name" id="name" class="form-control" onchange="getVals(this, 'name_field');" style="background: white;
+                  <input type="text" name="name" id="name" class="form-control" onchange="getVals(this, 'name_field');" style="background: #ffffff00;;
                   color: #040404;
                   border: 1px solid #9f9f9f;
                   margin-bottom: 1px;
                   height: 37px;" placeholder="" required>
                   <label>Phone</label>
-                  <input type="text" name="phone" id="phone" class="form-control" style="    background: white;
+                  <input type="text" name="phone" id="phone" class="form-control" style="    background: #ffffff00;;
                   color: #040404;
                   border: 1px solid #9f9f9f;
                   margin-bottom: 1px;
                   height: 37px;" placeholder="" required>
                    <label>Email Address</label>
-                  <input type="email" name="email" id="email" class="form-control" onchange="getVals(this, 'email_field');" style="    background: white;
+                  <input type="email" name="email" id="email" class="form-control" onchange="getVals(this, 'email_field');" style="    background: #ffffff00;;
                   color: #040404;
                   border: 1px solid #9f9f9f;
                   margin-bottom: 1px;
@@ -118,13 +154,13 @@
                  </div>
                   <div class="col-md-6">
                     <label>Message</label>
-                      <textarea rows="8.5" name="message" id="message" class="form-control" placeholder="Message" style="background: white;
+                      <textarea rows="8.5" name="message" id="message" class="form-control" placeholder="Message" style="background: #ffffff00;;
                       color: #040404;
                       border: 1px solid #9f9f9f;
                       margin-bottom: 1px;" placeholder="Email Address" required>
                       </textarea>
                    </div>
-                   <div class="col-md-12" style="    margin-top: 23px;"><input type="submit" class="btn-4" value="Enquire Now"></input></div>        
+                   <div class="col-md-12" style="    margin-top: 23px;"><input type="submit" class="btn-4" value="Enquiry Now"></input></div>        
                     </div>
             </form>
          </div>
@@ -160,7 +196,24 @@
 	<script src="js/jquery.sidr.min.js"></script>
 	<!--Custom JavaScript-->
 	<script src="js/custom.js"></script>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		wow = new WOW(
+		  {
+			animateClass: 'animated',
+			offset:       100,
+			callback:     function(box) {
+			  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+			}
+		  }
+		);
+		wow.init();
+		document.getElementById('moar').onclick = function() {
+		  var section = document.createElement('section');
+		  section.className = 'section--purple wow fadeInDown';
+		  this.parentNode.insertBefore(section, this);
+		};
+	  </script>
     
 </body>
 </html>
